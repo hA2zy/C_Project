@@ -21,8 +21,8 @@ void printInfo() {
 	for (int i = 0; i < m_idx; i++) {
 		if (mScor < 22) {
 			if (m_card[i] % 13 == 0) {
-			mAce:
 				printf("\t\t\t\tA가 나왔습니다. 1혹은 11을 더할지 정하세요 : ");
+				mAce:
 				scanf("%d", &press);
 				if (press == 1) {
 					mScor += 1;
@@ -31,7 +31,7 @@ void printInfo() {
 					mScor += 11;
 				}
 				else {
-					printf("\t\t\t\t잘못 입력이 되었습니다.\n");
+					printf("\t\t\t\t잘못 입력이 되었습니다.\n 다시 입력을 해주세요 : ");
 					goto mAce;
 				}
 			}
